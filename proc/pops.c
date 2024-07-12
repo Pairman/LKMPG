@@ -80,7 +80,7 @@ static int proc_release(struct inode *inode, struct file *file)
  * @file: pointer to the proc file
  * @buf: pointer to the buffer
  * @count: number of bytes to read
- * @pos: the starting offset
+ * @pos: pointer to the starting offset
  *
  * Called when a process reads from the proc file.
  */
@@ -98,7 +98,7 @@ static ssize_t proc_read(struct file *file, char __user *buf, size_t count,
  * @file: unused
  * @buf: pointer to the buffer
  * @count: number of bytes to read
- * @pos: the starting offset
+ * @pos: pointer to the starting offset
  *
  * Called when a process writes to the proc file.
  */
